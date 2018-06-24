@@ -1,0 +1,27 @@
+{
+  "name": "resize-pot",
+  "version": "1.0.0",
+  "repository": "github:parasti/resize-pot",
+  "description": "Resize images to nearest power-of-two dimensions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard",
+    "start": "budo index.js:build/index.js --live",
+    "build": "browserify index.js > build/index.js"
+  },
+  "keywords": [
+    "resize",
+    "scale",
+    "image",
+    "texture",
+    "power-of-two",
+    "power-of-2",
+    "pot"
+  ],
+  "author": "Jānis Rūcis",
+  "license": "GPL-3.0+",
+  "devDependencies": {},
+  "dependencies": {
+    "jszip": "^3.1.5"
+  }
+}
