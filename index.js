@@ -83,12 +83,18 @@ function near2 (n) {
   return Math.pow(2, Math.round(Math.log2(n)));
 }
 
+function next2 (n) {
+  return Math.pow(2, Math.ceil(Math.log2(n) + 1));
+}
+
 function resizeImage (img) {
   var w = img.naturalWidth;
   var h = img.naturalHeight;
 
-  var w2 = near2(w);
-  var h2 = near2(h);
+  var nextPot = !!document.querySelector('#next-pot').checked;
+
+  var w2 = nextPot ? next2(w) : near2(w);
+  var h2 = nextPot ? next2(h) : near2(h);
 
   if (w2 === w && h2 === h) {
     return null;

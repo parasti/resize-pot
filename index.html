@@ -85,10 +85,11 @@
 </head>
 <body>
 <div id="container">
-  <h1>Resize images to the nearest power-of-2</h1>
+  <h1>Resize images to a power-of-2</h1>
   <p>Drag and drop images here.</p>
   <p><label>Max. exponent: <input id="max-exponent" type="number" min="1" max="20"></label></p>
   <p>Max. image size: <span id="max-size"></span></p>
+  <p><label><input id="next-pot" type="checkbox" checked> Use the next power-of-2 size instead of the nearest one.</label></p>
   <div id="thumbs"></div>
 </div>
 <script src="build/index.js"></script>

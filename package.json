@@ -2,7 +2,7 @@
   "name": "resize-pot",
   "version": "1.0.0",
   "repository": "github:parasti/resize-pot",
-  "description": "Resize images to nearest power-of-two dimensions.",
+  "description": "Resize images to the next or nearest power-of-2",
   "main": "index.js",
   "scripts": {
     "test": "semistandard",
