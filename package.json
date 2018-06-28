@@ -7,7 +7,7 @@
   "scripts": {
     "test": "semistandard",
     "start": "budo index.js:build/index.js --live",
-    "build": "browserify index.js > build/index.js"
+    "build": "browserify -g uglifyify index.js > build/index.js"
   },
   "keywords": [
     "resize",
@@ -20,7 +20,9 @@
   ],
   "author": "Jānis Rūcis",
   "license": "GPL-3.0+",
-  "devDependencies": {},
+  "devDependencies": {
+    "uglifyify": "^5.0.1"
+  },
   "dependencies": {
     "jszip": "^3.1.5"
   }
