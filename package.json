@@ -24,6 +24,6 @@
     "uglifyify": "^5.0.2"
   },
   "dependencies": {
-    "jszip": "^3.1.5"
+    "jszip": "^3.8.0"
   }
 }
